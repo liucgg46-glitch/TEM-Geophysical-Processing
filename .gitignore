@@ -1,0 +1,100 @@
+# ==============================
+# TEM Geophysical Processing
+# .gitignore
+# ==============================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- IDE / Editor ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs / cache ----------
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- Raw / intermediate / processed data ----------
+# Do not commit research or large dataset files by default.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+data/interim/*
+!data/interim/.gitkeep
+!data/interim/README.md
+
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+
+data/public/*
+!data/public/.gitkeep
+!data/public/README.md
+
+# ---------- Common scientific data formats ----------
+*.dat
+*.bin
+*.mat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.segy
+*.sgy
+
+# ---------- Large archives ----------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# ---------- Generated results ----------
+results/logs/*
+!results/logs/.gitkeep
+
+# Uncomment the following lines if figures/tables become large
+# results/figures/*
+# !results/figures/.gitkeep
+# results/tables/*
+# !results/tables/.gitkeep
+
+# ---------- Model checkpoints (if ML is added later) ----------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ---------- Temporary files ----------
+tmp/
+temp/
+*.tmp
